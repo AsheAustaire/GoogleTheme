@@ -75,7 +75,7 @@ div p {
 
 .search-container {
   height: 42px;
-  width: 715px;
+  max-width: 715px;
   margin: auto;
   display: block;
   position: relative;
@@ -103,4 +103,17 @@ div p {
 
 p {
   font: 100px arial, sans-serif;
+}
+
+@media (max-width: 710px)  {
+  .content a:last-child {
+    display: none;
+  }
+}
+
+
+@media (max-width: 536px)  {
+  .content a:nth-child(3) {
+    display: none;
+  }
 }
